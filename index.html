@@ -4,7 +4,151 @@
     <script type = "text/javascript" src="unitConverter.js"></script> 
 
     <h1>
-        Hi
+        Measurement Converter
     </h1>
-    <input type = "button" onclick = "convertCupToTb(4)" value = "Display">  
+
+    <!-- CONVERT CUPS TO TBSP -->
+    <!-- create <input type = "number"> and create id?-->
+    <div class = "margin">
+        <!-- "for" specifies the id of the form? element the label should be bound to -->
+        <span>
+        <h3>
+           Convert Cups to Tablespoons:  
+        </h3>
+        <label for = "cupsTo" > Cups: </label>
+            <input type = "number" id = "cupsTo"
+        name="cupsTo"
+            min = "0.000">
+
+            <!-- get input's val in js -->
+            <script>
+                function getInput0() {
+                    let x = document.getElementById('cupsTo').value;
+                    return x;
+                }
+            </script>
+
+                <!-- Create an html "form" or "input" to take in input -->
+        <input type = "button" onclick = "convertCupToTbsp(getInput0())" value = "Enter">
+        <span>
+            <br>
+            <p> Tablespoons:  </p>
+            <p id = "cupToTb" >  </p>
+        </span>
+        <!-- <p id = "amount" >Tablespoons: </p>  -->
+        </span>
+    </div>
+
+    <!-- CONVERT CUPS TO TEASPOONS -->
+    <div class = "margin">
+        <span>
+            <h3>
+                Convert Cups to Teaspoons:
+            </h3>
+            <script>
+                function getInput1() {
+                    let x = document.getElementById('cupsToTsp').value;
+                    return x;
+                }
+            </script>
+            <label for = "cupsToTsp" > Cups: </label>
+                <input type = "number" id = "cupsToTsp" name = "cupsToTsp"
+                    min = "0.000">
+            <input type = "button" onclick = "convertCupsToTsp(getInput1())" value = "Enter">
+            <br>
+            <p> Teaspoons: </p>
+            <p id = "cupToTsp" > </p>
+        </span>
+    </div>
+
+    <!-- CONVERT TABLESPOONS TO TEASPOONS -->
+    <div class = "margin">
+        <span>
+            <h3>
+                Convert Tablespoons to Teaspoons:
+            </h3>
+            <script>
+                function getInput2() {
+                    let x = document.getElementById('tbsToTsp').value;
+                    return x;
+                }
+            </script>
+            <label for = "tbsToTsp" > Tablespoons: </label>
+                <input type = "number" id = "tbsToTsp" name = "tbsToTsp"
+                    min = "0.000">
+            <input type = "button" onclick = "convertTbspToTsp(getInput2())" value = "Enter">
+            <br>
+            <p> Teaspoons: </p>
+            <p id = "tbToTsp" > </p>
+        </span>
+    </div>
+
+    <!-- CONVERT OUNCES TO CUPS -->
+    <div class = "margin">
+        <span>
+            <h3>
+                Convert Ounces to Cups:
+            </h3>
+            <script>
+                function getInput3() {
+                    let x = document.getElementById('ozsToCups').value;
+                    return x;
+                }
+            </script>
+            <label for = "ozsToCups" > Ounces: </label>
+                <input type = "number" id = "ozsToCups" name = "ozsToCups"
+                    min = "0.000">
+            <input type = "button" onclick = "convertOzToCups(getInput3())" value = "Enter">
+            <br>
+            <p> Cups: </p>
+            <p id = "ozToCups" > </p>
+        </span>
+    </div>
+
+    <!-- CONVERT OUNCES TO TABLESPOONS -->
+    <div class = "margin">
+        <span>
+            <h3>
+                Convert Ounces to Tablespoons:
+            </h3>
+            <script>
+                function getInput4() {
+                    let x = document.getElementById('ozToTbsps').value;
+                    return x;
+                }
+            </script>
+            <label for = "ozToTbsps" > Ounces: </label>
+                <input type = "number" id = "ozToTbsps" name = "ozToTbsps"
+                    min = "0.000">
+            <input type = "button" onclick = "convertOzToTbsp(getInput4())" value = "Enter">
+            <br>
+            <p> Tablespoons: </p>
+            <p id = "ozToTbsp" > </p>
+        </span>
+    </div>
+
+    <!-- CONVERT OUNCES TO TEASPOONS -->
+    <div class = "margin">
+        <span>
+            <h3>
+                Convert Ounces to Teaspoons:
+            </h3>
+            <script>
+                function getInput5() {
+                    let x = document.getElementById('ozToTsps').value;
+                    return x;
+                }
+            </script>
+            <label for = "ozToTsps" > Ounces: </label>
+                <input type = "number" id = "ozToTsps" name = "ozToTsps"
+                    min = "0.000">
+            <input type = "button" onclick = "convertOzToTsp(getInput5())" value = "Enter">
+            <br>
+            <p> Teaspoons: </p>
+            <p id = "ozToTsp" > </p>
+        </span>
+    </div>
+
+    <!-- <p id="amount">Amount: </p>
+    <input type = "button" onclick = "convertCupToTbsp(4)" value = "Submit">  -->
 </html>

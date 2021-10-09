@@ -1,3 +1,22 @@
-h1 {
+/* h1 {
     color: red;
+} */
+p{
+    display: inline-block;
+}
+
+.center{
+    text-align:center;
+
+}
+.margin{
+    margin-left:70px;
+    margin-right:70px;
+}
+h1{
+    text-align:center;
+    color: #043305;
+}
+h3{
+    color: #327333
 }
