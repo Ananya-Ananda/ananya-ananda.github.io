@@ -3,18 +3,14 @@
     <link rel="stylesheet" href="design.css">
     <script type = "text/javascript" src="unitConverter.js"></script> 
 
-    <h1>
-        Measurement Converter
-    </h1>
-
+    <h1>Measurement Converter</h1>
+    
     <!-- CONVERT CUPS TO TBSP -->
-    <!-- create <input type = "number"> and create id?-->
+    <!-- create <input type = "number"> and create id-->
     <div class = "margin">
-        <!-- "for" specifies the id of the form? element the label should be bound to -->
+        <!-- "for" specifies the id of the form - element the label should be bound to -->
         <span>
-        <h3>
-           Convert Cups to Tablespoons:  
-        </h3>
+        <h3>Convert Cups to Tablespoons:</h3>
         <label for = "cupsTo" > Cups: </label>
             <input type = "number" id = "cupsTo"
         name="cupsTo"
@@ -42,9 +38,7 @@
     <!-- CONVERT CUPS TO TEASPOONS -->
     <div class = "margin">
         <span>
-            <h3>
-                Convert Cups to Teaspoons:
-            </h3>
+            <h3>Convert Cups to Teaspoons:</h3>
             <script>
                 function getInput1() {
                     let x = document.getElementById('cupsToTsp').value;
@@ -64,9 +58,7 @@
     <!-- CONVERT TABLESPOONS TO TEASPOONS -->
     <div class = "margin">
         <span>
-            <h3>
-                Convert Tablespoons to Teaspoons:
-            </h3>
+            <h3>Convert Tablespoons to Teaspoons:</h3>
             <script>
                 function getInput2() {
                     let x = document.getElementById('tbsToTsp').value;
@@ -86,9 +78,7 @@
     <!-- CONVERT OUNCES TO CUPS -->
     <div class = "margin">
         <span>
-            <h3>
-                Convert Ounces to Cups:
-            </h3>
+            <h3>Convert Ounces to Cups:</h3>
             <script>
                 function getInput3() {
                     let x = document.getElementById('ozsToCups').value;
@@ -108,9 +98,7 @@
     <!-- CONVERT OUNCES TO TABLESPOONS -->
     <div class = "margin">
         <span>
-            <h3>
-                Convert Ounces to Tablespoons:
-            </h3>
+            <h3>Convert Ounces to Tablespoons:</h3>
             <script>
                 function getInput4() {
                     let x = document.getElementById('ozToTbsps').value;
@@ -130,9 +118,7 @@
     <!-- CONVERT OUNCES TO TEASPOONS -->
     <div class = "margin">
         <span>
-            <h3>
-                Convert Ounces to Teaspoons:
-            </h3>
+            <h3>Convert Ounces to Teaspoons:</h3>
             <script>
                 function getInput5() {
                     let x = document.getElementById('ozToTsps').value;
@@ -148,7 +134,17 @@
             <p id = "ozToTsp" > </p>
         </span>
     </div>
-
-    <!-- <p id="amount">Amount: </p>
-    <input type = "button" onclick = "convertCupToTbsp(4)" value = "Submit">  -->
+    <div>
+        <span>
+            <h1>Happy Baking:)</h1>
+        </span>
+    </div>
+    <div id="articles"> //side by side articles
+        <div id="article1" >
+            //add summary of article1
+        </div>
+        <div id="article2"> 
+            //add summary of article2
+        </div>
+    </div>
 </html>
